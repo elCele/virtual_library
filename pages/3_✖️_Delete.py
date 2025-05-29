@@ -6,9 +6,9 @@ from utils import logout as lg
 
 st.set_page_config("Add", "✖️", "wide")
 
-if not st.session_state.get("logged_in"):
+'''if not st.session_state.get("logged_in"):
     st.error("Log in required")
-    st.stop()
+    st.stop()'''
 
 DB_PATH = st.session_state.dbPath
 st.session_state.conn = sqlite3.connect(DB_PATH)

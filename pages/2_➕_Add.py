@@ -7,9 +7,9 @@ from utils import logout as lg, search_book
 
 st.set_page_config("Add", "➕", "wide")
 
-if not st.session_state.get("logged_in"):
+'''if not st.session_state.get("logged_in"):
     st.error("Log in required")
-    st.stop()
+    st.stop()'''
 
 st.title("➕ :green[Add] a book")
 

@@ -13,9 +13,9 @@ st.set_page_config(
 conditions = []
 attributes = []
 
-if not st.session_state.get("logged_in"):
+'''if not st.session_state.get("logged_in"):
     st.error("Log in required")
-    st.stop()
+    st.stop()'''
 
 if "showFilter" not in st.session_state.keys():
     st.session_state.showFilter = False
