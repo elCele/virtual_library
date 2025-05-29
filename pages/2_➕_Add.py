@@ -34,7 +34,7 @@ if st.button("Search book", use_container_width = True):
 with st.form("add", border = False):
     st.text_input("ISBN*", placeholder = "▮▮▮-▮▮-▮▮-▮▮▮▮▮-▮", key = "isbn")
     st.text_input("Author*", placeholder = "Name surname", key = "author")
-    read_option = st.radio("Read", ["Read", "Not read"], horizontal = True)
+    read_option = st.radio("Read", ["Read", "Not read"], horizontal = True  )
     rating = st.number_input("Rating", min_value = -1, max_value = 10, step = 1)
     posX = st.number_input("X position", min_value = -1, max_value = 4, step = 1)
     posY = st.number_input("Y position", min_value = -1, max_value = 4, step = 1)
